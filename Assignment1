@@ -32,7 +32,10 @@ Q6. Assume we fit the following quadratic function: f(x) = w0+w1*x+w2*(x^2) to t
 
 linear_regression3
 ----------------
-solution:-
+solution:-w0,w1 wrong
+          w0,w2 wrong 
+          w1,w2 wrong 
+          s0, try some differnt from them 
 ----------------------------------------------------
 Q7. Assume we fit the following quadratic function: f(x) = w0+w1*x+w2*(x^2) to the dataset shown (blue circles). The fitted function is shown by the green curve in the picture below. Out of the 3 parameters of the fitted function (w0, w1, w2), which ones are estimated to be 0? (Note: you must select all parameters estimated as 0 to get the question correct.)
 
@@ -47,6 +50,8 @@ Error curve and model complexity.:--
 1).trainig error contibue keep decreasing
 
 2).test error goes down first and then keep up
+
+so,the correct answer you could choose , both graph first decrease and then increase i.e-3rd option 
 ------------------------------------------------------------------
 Q9. True or false: One always prefers to use a model with more features since it better captures the true underlying process.
 ----------
