@@ -35,6 +35,9 @@ linear_regression3
 solution:-w0,w1 wrong
           w0,w2 wrong 
           w1,w2 wrong 
+          w1    wrong
+          w1 none  of above   wrong
+          w2   wrong
           s0, try some differnt from them 
 ----------------------------------------------------
 Q7. Assume we fit the following quadratic function: f(x) = w0+w1*x+w2*(x^2) to the dataset shown (blue circles). The fitted function is shown by the green curve in the picture below. Out of the 3 parameters of the fitted function (w0, w1, w2), which ones are estimated to be 0? (Note: you must select all parameters estimated as 0 to get the question correct.)
