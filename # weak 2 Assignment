@@ -1,0 +1,73 @@
+# weak 2 Assignment
+
+#Question1:-
+          Selection and summary statistics: We found the zip code with
+          the highest average house price. What is the average house price of that zip code?
+-Answer:-
+   -follow the steps to find the answer=
+   
+         high=sales[sales['zipcode'=='98178']]
+         
+         -next find the mean i.e-obtaining the average of the house form zip
+         
+         high['price'].mean()
+        2160606.5999999996
+ 
+ 
+#Question 2:-
+Filtering data: What fraction of the houses have living space between 2000 sq.ft. and 4000 sq.ft.?
+-Answer:-
+          -  Follow the bellow step to obtain the answer=
+            
+           in_range = sales[(sales['sqft_living']>=2000) & (sales['sqft_living']<=4000)]
+             in_range
+             len(in_range)  //finding the length of the range of data from 2000 to 4000
+             len(sales) // from this data we obtain the total number of data 
+             -next steps to find the fraction so, 
+             devide i.e- new(here i'm choosing len(in_range) /old(here i'm choosing the len(sales)
+             so,
+             9221/21613
+             after devide we obtained frac data as .42 i.e- 42%
+             
+ #Question 3
+  #  Building a regression model with several more features: What is the difference in RMSE between the model trained with
+       my_features and the one trained with advanced_features?
+       
+  -Answer:-
+            # my_features = ['bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors', 'zipcode']
+              
+             # sales[my_features].show()
+             # sales.show(view='BoxWhisker Plot', x='zipcode', y='price')
+             
+            next step to build the regression model:-
+            
+    # my_features_model = graphlab.linear_regression.create(train_data,target='price',features=my_features,validation_set=None)
+             
+      #  my_features_model.evaluate(test_data) 
+      
+      -now moved for advaced_features_model:-
+      
+# advanced_features = ['bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors',
+                        'zipcode','condition', 'grade','waterfront','view','sqft_above','sqft_basement','yr_built',
+                         'yr_renovated','lat','long','sqft_living15','sqft_lot15'] 
+      
+  #adv_features_model = graphlab.linear_regression.create(train_data,target='price',
+                                                            features=advanced_features,validation_set=None)
+                                                            
+# adv_features_model.evaluate(test_data)        
+{'max_error': 3556849.413858208, 'rmse': 156831.1168021901}
+ so,finally difference is-
+             :22711
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+            
+                                                            
+             
+    
+            
+         
