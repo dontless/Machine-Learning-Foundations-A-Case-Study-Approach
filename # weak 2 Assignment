@@ -1,14 +1,14 @@
-# weak 2 Assignment
+#weak 2 Assignment
 
 #Question1:-
           Selection and summary statistics: We found the zip code with
           the highest average house price. What is the average house price of that zip code?
--Answer:-
-   -follow the steps to find the answer=
+Answer:-
+#follow the steps to find the answer=>
    
          high=sales[sales['zipcode'=='98178']]
          
-         -next find the mean i.e-obtaining the average of the house form zip
+         next find the mean i.e-obtaining the average of the house form zip
          
          high['price'].mean()
         2160606.5999999996
@@ -17,7 +17,7 @@
 #Question 2:-
 Filtering data: What fraction of the houses have living space between 2000 sq.ft. and 4000 sq.ft.?
 -Answer:-
-          -  Follow the bellow step to obtain the answer=
+#Follow the bellow step to obtain the answer=
             
            in_range = sales[(sales['sqft_living']>=2000) & (sales['sqft_living']<=4000)]
              in_range
