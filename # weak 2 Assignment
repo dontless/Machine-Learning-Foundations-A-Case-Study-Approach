@@ -1,16 +1,16 @@
 #weak 2 Assignment
 
-#Question1:-
-          Selection and summary statistics: We found the zip code with
-          the highest average house price. What is the average house price of that zip code?
+##Question1:-
+          *Selection and summary statistics: We found the zip code with
+          the highest average house price. What is the average house price of that zip code?*
 Answer:-
-#follow the steps to find the answer=>
+###follow the steps to find the answer=>
    
-         high=sales[sales['zipcode'=='98178']]
+         _high=sales[sales['zipcode'=='98178']]
          
-         next find the mean i.e-obtaining the average of the house form zip
+         _next find the mean i.e-obtaining the average of the house form zip
          
-         high['price'].mean()
+         _high['price'].mean()
         2160606.5999999996
  
  
