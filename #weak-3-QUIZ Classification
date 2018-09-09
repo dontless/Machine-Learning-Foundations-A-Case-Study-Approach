@@ -5,70 +5,63 @@ Classification
 Quiz, 7 questions
 1 point
 --------------------------------------------------------------------------------------------------------------------------------
-1.
-The simple threshold classi�er for sentiment analysis
+1.The simple threshold classi�er for sentiment analysis
 described in the video (check all that apply):
-a).Must have pre-de�ned positive and negative
-attributes
-b).Must either count attributes equally or pre-de�ne
-weights on attributes
-c).De�nes a possibly non-linear decision boundary
 
-solution:-
+a) Must have pre-defined positive and negative attributes
+b) Must either count attributes equally or pre-define weights on attributes
+c) Defines a possibly non-linear decision boundary
+
+solution:- b
 -------------------------------------------------------------------
-2.For a linear classi�er classifying between “positive” and
-“negative” sentiment in a review x, Score(x) = 0 implies
-(check all that apply):
-a).The review is very clearly “negative”
-b).We are uncertain whether the review is “positive” or
-“negative”
-c).We need to retrain our classi�er because an error
-has occurred
+2. For a linear classifier classifying between “positive” 
+   n and “negative” sentiment in a review x, Score(x) = 0 
+   implies (check all that apply):
 
-solution:-
-------------------------------------------------------------
- 
-----------------------------------------------------------------
-3.For which of the following datasets would a linear
-classi�er perform perfectly?
+a) The review is very clearly “negative”
+b) We are uncertain whether the review is “positive” or “negative”
+c) We need to retrain our classifier because an error has occurred
 
-solution:-
+solution:- b
+
+---------------------------------------------------------------------
+3. For which of the following datasets would a linear classifier perform perfectly?
+
+solution:- b
  
 ------------------------------------------------------------------ 
-4.True or false: High classi�cation accuracy always indicates
-a good classi�er.
-a).True
-b).False
-solution:-
+4. True or false: High classification accuracy always indicates a good classifier.
+
+a) True
+b) False
+
+solution:- False
 -------------------------------------------------------------------
  
-5.True or false: For a classi�er classifying between 5 classes,
-there always exists a classi�er with accuracy greater than
-0.18.
-a).True
-b).False
-solution:-
+5.  True or false: For a classifier classifying between 5 classes, 
+    there always exists a classifier with accuracy greater than 0.18.
+
+a) True
+b) False
+
+solution:- true
 ----------------------------------------------------------------------
  
 6.True or false: A false negative is always worse than a false
 positive.
-True
-False
+a).True
+b).False
 
-solution:-
+solution:- false
 ------------------------------------------------------------------------
  
-7.Which of the following statements are true? (Check all that
-apply)
-a).Test error tends to decrease with more training data
-until a point, and then does not change (i.e., curve
-�attens out)
-b).Test error always goes to 0 with an unboundedly
-large training dataset
-c).Test error is never a function of the amount of
-training data
+7. Which of the following statements are true? (Check all that apply)
 
-solution:-
+a) Test error tends to decrease with more training data until a point, and then does not change (i.e., curve flattens out)
+b) Test error always goes to 0 with an unboundedly large training dataset
+c) Test error is never a function of the amount of training data
+
+solution:- a
 ----------------------------------------------------
  
 09/09/18, 7:22 PM
