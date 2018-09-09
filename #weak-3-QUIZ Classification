@@ -1,0 +1,74 @@
+#Weak3 quize
+1.Machine Learning Foundations: A Case Study A...
+https://www.coursera.org/learn/ml-foundations/...
+Classification
+Quiz, 7 questions
+1 point
+--------------------------------------------------------------------------------------------------------------------------------
+1.
+The simple threshold classi�er for sentiment analysis
+described in the video (check all that apply):
+a).Must have pre-de�ned positive and negative
+attributes
+b).Must either count attributes equally or pre-de�ne
+weights on attributes
+c).De�nes a possibly non-linear decision boundary
+
+solution:-
+-------------------------------------------------------------------
+2.For a linear classi�er classifying between “positive” and
+“negative” sentiment in a review x, Score(x) = 0 implies
+(check all that apply):
+a).The review is very clearly “negative”
+b).We are uncertain whether the review is “positive” or
+“negative”
+c).We need to retrain our classi�er because an error
+has occurred
+
+solution:-
+------------------------------------------------------------
+ 
+----------------------------------------------------------------
+3.For which of the following datasets would a linear
+classi�er perform perfectly?
+
+solution:-
+ 
+------------------------------------------------------------------ 
+4.True or false: High classi�cation accuracy always indicates
+a good classi�er.
+a).True
+b).False
+solution:-
+-------------------------------------------------------------------
+ 
+5.True or false: For a classi�er classifying between 5 classes,
+there always exists a classi�er with accuracy greater than
+0.18.
+a).True
+b).False
+solution:-
+----------------------------------------------------------------------
+ 
+6.True or false: A false negative is always worse than a false
+positive.
+True
+False
+
+solution:-
+------------------------------------------------------------------------
+ 
+7.Which of the following statements are true? (Check all that
+apply)
+a).Test error tends to decrease with more training data
+until a point, and then does not change (i.e., curve
+�attens out)
+b).Test error always goes to 0 with an unboundedly
+large training dataset
+c).Test error is never a function of the amount of
+training data
+
+solution:-
+----------------------------------------------------
+ 
+09/09/18, 7:22 PM
