@@ -1,7 +1,9 @@
+#Weak 1  Assignment1
+
 
 Q2. True or false: The model that best minimizes training error is the one that will perform best for the task of prediction on new data.
 #answer:false
----------------------------------------
+
 
 Q3. The following table illustrates the results of evaluating 4 models with different parameter choices on some data set. Which of the following models fits this data the best?
 
@@ -10,28 +12,28 @@ Model index	Parameters (intercept, slope)	Residual sum of squares (RSS)
 2	(3.1,1.4)	15.23
 3	(2.7, 1.9)	13.67
 4	(0, 2.3)	18.99
------------------
+
 solution:-rss is always small values i.e-13.67
-------------------------------------------------------------------------------------------
 
 Q4. Assume we fit the following quadratic function: f(x) = w0+w1*x+w2*(x^2) to the dataset shown (blue circles). The fitted function is shown by the green curve in the picture below. Out of the 3 parameters of the fitted function (w0, w1, w2), which ones are estimated to be 0? (Note: you must select all parameters estimated as 0 to get the question correct.)
 
 linear_regression
---------
+
 solution:-f(x) = w0+w1x+w2(x^2) with total linear regression line. so, w2 will be "zero"
 
----------------------------------------------------------------------------------------------------------
+
 Q5. Assume we fit the following quadratic function: f(x) = w0+w1*x+w2*(x^2) to the dataset shown (blue circles). The fitted function is shown by the green curve in the picture below. Out of the 3 parameters of the fitted function (w0, w1, w2), which ones are estimated to be 0? (Note: you must select all parameters estimated as 0 to get the question correct.)
 
 linear_regression2.
----------
+
 solution:-
 f(x) = w0+w1x+w2(x^2) with total linear regression line and go through (0,0). so, "w0 and w2 will be zero".
----------------------------------------------------------------------
+
+
 Q6. Assume we fit the following quadratic function: f(x) = w0+w1*x+w2*(x^2) to the dataset shown (blue circles). The fitted function is shown by the green curve in the picture below. Out of the 3 parameters of the fitted function (w0, w1, w2), which ones are estimated to be 0? (Note: you must select all parameters estimated as 0 to get the question correct.)
 
 linear_regression3
-----------------
+
 solution:-w0,w1 wrong
           w0,w2 wrong 
           w1,w2 wrong 
@@ -41,13 +43,13 @@ solution:-w0,w1 wrong
           s0, try some differnt from them 
           
      answer:-     none of these is right answer 
-----------------------------------------------------
+
 Q7. Assume we fit the following quadratic function: f(x) = w0+w1*x+w2*(x^2) to the dataset shown (blue circles). The fitted function is shown by the green curve in the picture below. Out of the 3 parameters of the fitted function (w0, w1, w2), which ones are estimated to be 0? (Note: you must select all parameters estimated as 0 to get the question correct.)
 
 linear_regression4.
----------
+
 solution:-f(x) = w0+w1x+w2(x^2) with quandrtic curve and go through (0,0). "w0 will be zero".
--------------------------------------------------------------------------
+
 Q8. Would you not expect to see this polot as a plot of training and test error curves?
 solution:-
 Error curve and model complexity.:--
@@ -57,9 +59,9 @@ Error curve and model complexity.:--
 2).test error goes down first and then keep up
 
 so,the correct answer you could choose , both graph first decrease and then increase i.e-3rd option 
-------------------------------------------------------------------
+
 Q9. True or false: One always prefers to use a model with more features since it better captures the true underlying process.
-----------
+
 solution:-
 One always prefers to use a model with more features since it better captures the true underlying process is "false"
 
