@@ -1,0 +1,141 @@
+#In[1]:
+
+selected_words = ['awesome', 'great', 'fantastic', 'amazing', 'love', 'horrible', 'bad', 'terrible', 'awful', 'wow', 'hate']
+
+
+
+# In[2]:
+
+def select_words(words_count):
+    selected_words = ['awesome', 'great', 'fantastic', 'amazing', 'love', 'horrible', 'bad', 'terrible', 'awful', 'wow', 'hate']
+    d = {}
+    for word in selected_words:
+        if word not in words_count: d[word] = 0
+        else: d[word] = words_count[word]
+    return d
+
+
+# In[3]:
+
+products['selected_word_count'] = products['word_count'].apply(select_words)
+
+
+# In[4]:
+
+products['selected_word_count']
+
+
+# In[5]:
+
+for word in selected_words:
+    products[word] = products['word_count'].apply(lambda word_count: word_count[word] if word in word_count else 0)
+
+
+# In[6]:
+
+products
+
+
+# ### Out of the selected_words, which one is most used in the dataset? Which one is least used?
+
+# In[7]:
+
+max_count, min_count = 0, 9223372036854775807
+max_word, min_word = selected_words[0], selected_words[0]
+for word in selected_words:
+    total = products[word].sum()
+    if total > max_count:
+        max_word = word
+        max_count = total
+    if total < min_count:
+        min_word = word
+        min_count = total
+print('most used: ', max_word, max_count)
+print('least used: ', min_word, min_count)
+
+
+# In[8]:
+
+train_data,test_data = products.random_split(.8, seed=0)
+
+
+# In[9]:
+
+selected_words_model = graphlab.logistic_classifier.create(train_data,
+                                                     target='sentiment',
+                                                     features=selected_words,
+                                                     validation_set=test_data)
+
+
+# In[10]:
+
+selected_words_model['coefficients']
+
+
+# ### Out of the 11 words in selected_words, which one got the most positive weight? Which one got the most negative weight? Do these values make sense for you?
+
+# In[11]:
+
+most_positive = -1
+most_positive_word = ''
+most_negative = 1
+most_negative_word = ''
+for row in selected_words_model['coefficients']:
+    if row['name'] == '(intercept)': continue
+    if row['value']>most_positive:
+        most_positive = row['value']
+        most_positive_word = row['name']
+    if row['value']<most_negative:
+        most_negative = row['value']
+        most_negative_word = row['name']
+print('most positive: ', most_positive_word, most_positive)
+print('most negative: ', most_negative_word, most_negative)
+
+
+# In[12]:
+
+sentiment_model.evaluate(test_data)
+
+
+# In[13]:
+
+selected_words_model.evaluate(test_data)
+
+
+# In[14]:
+
+diaper_champ_reviews = products[products['name']=='Baby Trend Diaper Champ']
+
+
+# In[15]:
+
+diaper_champ_reviews
+
+
+# In[16]:
+
+diaper_champ_reviews = diaper_champ_reviews.sort('rating', ascending = False)
+
+
+# In[17]:
+
+diaper_champ_reviews = diaper_champ_reviews.sort('sentiment', ascending = False)
+
+
+# In[18]:
+
+diaper_champ_reviews
+
+
+# In[19]:
+
+selected_words_model.predict(diaper_champ_reviews[0:10], output_type='probability')
+
+
+# In[20]:
+
+sentiment_model.predict(diaper_champ_reviews[0:10], output_type='probability')
+
+
+# In[21]:
+len(products[products['sentiment']==1])/float(len(products))
