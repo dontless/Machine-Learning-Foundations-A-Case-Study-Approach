@@ -12,7 +12,7 @@ a) Must have pre-defined positive and negative attributes
 b) Must either count attributes equally or pre-define weights on attributes
 c) Defines a possibly non-linear decision boundary
 
-solution:- b
+solution:- b,a
 -------------------------------------------------------------------
 2. For a linear classifier classifying between “positive” 
    n and “negative” sentiment in a review x, Score(x) = 0 
