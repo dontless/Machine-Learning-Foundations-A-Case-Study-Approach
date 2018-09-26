@@ -2,9 +2,10 @@
  
  MACHINE LEARNING FOUNDATIONS
 
-https://www.coursera.org/specializations/machine-learning
+      https://www.coursera.org/specializations/machine-learning
 
-WEEK 1 INTRODUCTION
+# WEEK 1 INTRODUCTION
+
 THE MACHINE LEARNING PIPELINE
 
 Data -> ML Method -> Intelligence
@@ -97,113 +98,117 @@ Wk 5 Matrix Factorization & Dimensionality Reduction
         scaling up
 
 Wk 6 Capstone: An intelligent application using deep learning
-GETTING STARTED WITH PYTHON
 
-Install anaconda, GraphLab, ipython notebook
+# GETTING STARTED WITH PYTHON
 
-To run notebooks once above is installed
+      Install anaconda, GraphLab, ipython notebook
 
-source activate gl-env
-conda update pip
-jupyter-notebook --no-browser
+### To run notebooks once above is installed
+
+        source activate gl-env
+        conda update pip
+        jupyter-notebook --no-browser
 
 [First Notebook](week_1/Getting started with iPython Notebook.html)
 
-    [source](week_1/Getting started with iPython Notebook.ipynb)
+       [source](week_1/Getting started with iPython Notebook.ipynb)
 
-Basic types
+         Basic types
 
-i = 4 # int
-f = 4.1
-b = True
+         i = 4 # int
+        f = 4.1
+       b = True
 
-type(i)
+       type(i)
 
 Advanced types
 
-l = [3, 1, 2] # list
+        l = [3, 1, 2] # list
 
-d = {'foo':1, 'bar':2.3, 's':'string'} # dictionary
+         d = {'foo':1, 'bar':2.3, 's':'string'} # dictionary
 
-print d['foo']
+         print d['foo']
 
-n = None # null
-type(n) # NoneType
+      n = None # null
+      type(n) # NoneType
 
 Advanced printing
 
-print "Our float value is %s. Our int value is %s." % (f,i)
+        print "Our float value is %s. Our int value is %s." % (f,i)
 
 Conditional statements
 
-if i == 1 and f > 4:
-  print "i == 1 and f > 4"
-elif i > 4 or f > 4:
-  print "(i or f) > 4"
-else:
-  print "(i and f) <= 4"
+       if i == 1 and f > 4:
+          print "i == 1 and f > 4"
+     elif i > 4 or f > 4:
+       print "(i or f) > 4"
+     else:
+      print "(i and f) <= 4"
 
 Loops
 
-print l
+     print l
 
-for e in l:
-  print e
+      for e in l:
+      print e
 
-counter = 6
-while counter < 10:
-  print counter
-  counter += 1
+       counter = 6
+    while counter < 10:
+       print counter
+      counter += 1
 
 functions
 
-def add2(x):
-  return x + 2
+      def add2(x):
+       return x + 2
 
 lambdas
 
-square = lambda x: x*x
-square(3)
+     square = lambda x: x*x
+       square(3)
 
 GETTING STARTED WITH SFRAME AND GRAPHLAB CREATE
 
-iPython Notebook
+     iPython Notebook
 
-Machine learning library scikit-learn
+     Machine learning library scikit-learn
 
-Data manipulation tool Pandas
+      Data manipulation tool Pandas
 
-Tools above require a learning curve. This course uses GraphLab Create that includes SFrame
+ Tools above require a learning curve. This course uses GraphLab Create that includes SFrame
 
-Load a tabular data set sf = graphlab.SFrame('people-example.csv')
+       Load a tabular data set sf = graphlab.SFrame('people-example.csv')
 
-view end of the table sf.tail()
+           view end of the table sf.tail()
+                          
+                           
 
-visualizes any data structure in GraphLab Create sf.show()
+       visualizes any data structure in GraphLab Create sf.show()
 
-Categorical view sf['age'].show(view='Categorical')
+        Categorical view sf['age'].show(view='Categorical')
 
 Some simple columnar operations
 
-sf['age'].mean()
-sf['age'].max()
+         sf['age'].mean()
+       sf['age'].max()
 
-Create new columns in our SFrame sf['Full Name'] = sf['First Name'] + ' ' + sf['Last Name']
+      Create new columns in our SFrame sf['Full Name'] = sf['First Name'] + ' ' + sf['Last Name']
 
 Use the apply function to do a advance transformation of our data
 
-def transform_country(country):
+        def transform_country(country):
 
-  if country == 'USA':
-    return 'United States'
-  else:
-  return country
+          if country == 'USA':
+         return 'United States'
+         else:
+          return country
 
-transform_country('USA')
+         transform_country('USA')
 
-sf['Country'].apply(transform_country)
+       sf['Country'].apply(transform_country)
 
-WEEK 2 Regression: Predicting House Prices
+# WEEK 2 Regression: Predicting House Prices
+
 Introduction
 Linear regression modeling
 
@@ -236,7 +241,7 @@ Fit a line through the data = f(x) = w0 + w1 x
 
 Linear Regression Model
 
-f(x) is parameterized by (w0, w1)
+      f(x) is parameterized by (w0, w1)
 
 RSS := Residaul sum of squares
 
@@ -248,16 +253,16 @@ RSS
 
 best line is the one that minimizes the cost over all possible w0,w1
 
-Ŵ = (ŵ0, ŵ1) W hat
+          Ŵ = (ŵ0, ŵ1) W hat
 
-Fŵ(x) = ŵ0 + ŵ1 x
+          Fŵ(x) = ŵ0 + ŵ1 x
 
 Best guess of your house price ŷ = ŵ0 + ŵ1 (sq ft your house)
 Adding higher order effects
 
 But what if it's not a linear relationship. It could be quadratic.
 
-Fw(x) = w0 + w1 x + w2 x^2
+           Fw(x) = w0 + w1 x + w2 x^2
 
 note we square x, but not w
 
@@ -285,7 +290,7 @@ Want good predictions but can't observe future. We can simulate prediction
 
 Training error
 
-Test error (ŵ) = ($test1 - fw(sq.ft. test1))^2
+        Test error (ŵ) = ($test1 - fw(sq.ft. test1))^2
                + ($test2 - fw(sq.ft. test2))^2
                + ($test3 - fw(sq.ft. test3))^2
                + ...
@@ -341,7 +346,7 @@ Quiz: Regression
 See Explore the Quadratic Equation to see the effect of the coefficients
 Predicting house prices: IPython Notebook
 
-iPython Notebook
+            iPython Notebook
 
 Generate a scatter plot sales.show(view="Scatter Plot", x="sqft_living", y="price")
 
@@ -349,7 +354,7 @@ Generate a scatter plot sales.show(view="Scatter Plot", x="sqft_living", y="pric
 
 Splitting the data into training and test sets
 
-train_data,test_data = sales.random_split(.8,seed=0)
+        train_data,test_data = sales.random_split(.8,seed=0)
 
     Use random_split to split training and test data
     0.8 => 80% training and 20% test
@@ -357,7 +362,7 @@ train_data,test_data = sales.random_split(.8,seed=0)
 
 Learning a simple regression model to predict house prices from house size
 
-sqft_model = graphlab.linear_regression.create(train_data,
+        sqft_model = graphlab.linear_regression.create(train_data,
                                                target='price', 
                                                features=['sqft_living'], 
                                                validation_set=None)
@@ -366,17 +371,17 @@ sqft_model = graphlab.linear_regression.create(train_data,
 
 Evaluating error (RMSE) of the simple model
 
-print sqft_model.evaluate(test_data)
+       print sqft_model.evaluate(test_data)
 
     max_error is the outlier
     Also shows RMSE
 
 Visualizing predictions of simple model with Matplotlib
 
-import matplotlib.pyplot as plt
-%matplotlib inline
+          import matplotlib.pyplot as plt
+           %matplotlib inline
 
-plt.plot(test_data['sqft_living'], test_data['price'], '.',
+         plt.plot(test_data['sqft_living'], test_data['price'], '.',
          test_data['sqft_living'], sqft_model.predict(test_data), '-')
 
     blue . is the actual data scatter plot
@@ -384,24 +389,24 @@ plt.plot(test_data['sqft_living'], test_data['price'], '.',
 
 Inspecting the model coefficients learned
 
-sqft_model.get('coefficients')
+     sqft_model.get('coefficients')
 
     (intercept) = where the line crosses the y axis
     sqft_living ~= the average cost of a house per sq ft according to this regression model
 
 View other features of a house we might be interested in
 
-my_features = ['bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors', 'zipcode']
+         my_features = ['bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors', 'zipcode']
 
-sales[my_features].show()
+         sales[my_features].show()
 
-sales.show(view='BoxWhisker Plot', x='zipcode', y='price')
+        sales.show(view='BoxWhisker Plot', x='zipcode', y='price')
 
     BoxWhisker Plot to view the set split by feature (zipcode in this case)
 
 Based on the data we see other features such as zip code, and # bedrooms makes a difference in the estimated price of a home
 
-my_features_model = graphlab.linear_regression.create(train_data,
+         my_features_model = graphlab.linear_regression.create(train_data,
                                                       target='price',
                                                       features=my_features,
                                                       validation_set=None)
@@ -410,107 +415,108 @@ print my_features to view what features are includedd
 
 Compare the original model to the expanded features model
 
-print sqft_model.evaluate(test_data)
-print my_features_model.evaluate(test_data)
+        print sqft_model.evaluate(test_data)
+      print my_features_model.evaluate(test_data)
 
     Note that the rmse has lowered by adding additional features
 
 Applying learned models to predict price of an average house
 
-house1 = sales[sales['id']=='5309101200'] # find a particular house by id
+       house1 = sales[sales['id']=='5309101200'] # find a particular house by id
 
-house1 # to view the data for this house
+       house1 # to view the data for this house
 
-print house1['price'] to view the actual price based on the data
+       print house1['price'] to view the actual price based on the data
 
-print sqft_model.predict(house1) to check the price our model predicted
-
-print my_features_model.predict(house1) to predict price based on expanded features
+        print sqft_model.predict(house1) to check the price our model predicted
+ 
+      print my_features_model.predict(house1) to predict price based on expanded features
 
 :caution: the prediction model based on sqft was more accurate than the expanded feature model in this case
 
 Applying learned models to predict price of two fancy houses
 
-house2 = sales[sales['id']=='1925069082']
+           house2 = sales[sales['id']=='1925069082']
 
-    this is an example of a house where due to an uncaptured feature, "on the waterfront", was not predicted very well by our model
+ this is an example of a house where due to an uncaptured feature, "on the waterfront", was not predicted very well by our model
     expanded feature prediction is closer than the original sqft model
 
 Final example is Bill Gates' house. We don't have data on what the actual price is but the prediction gives us a price, that is probably on the low end.
+
 Quiz: Programming assignment
 
-    Selection and summary statistics: In the notebook we covered in the module, we discovered which neighborhood (zip code) of Seattle had the highest average house sale price. Now, take the sales data, select only the houses with this zip code, and compute the average price.
+Selection and summary statistics: In the notebook we covered in the module, we discovered which neighborhood (zip code) of Seattle had the highest average house sale price. Now, take the sales data, select only the houses with this zip code, and compute the average price.
 
-Ans:
+   Ans:
 
-houses = sales[sales['zipcode']=='98039']
-houses['price'].mean()
+       houses = sales[sales['zipcode']=='98039']
+        houses['price'].mean()
 
-2160606.5999999996
+       2160606.5999999996
 
-    Filtering data: One of the key features we used in our model was the number of square feet of living space (sqft_living) in the house. For this part, we are going to use the idea of filtering (selecting) data.
+  Filtering data: One of the key features we used in our model was the number of square feet of living space (sqft_living) in the house. For this part, we are going to use the idea of filtering (selecting) data.
 
-    In particular, we are going to use logical filters to select rows of an SFrame. You can find more info in the Logical Filter section of this documentation. Using such filters, first select the houses that have sqft_living higher than 2000 sqft but no larger than 4000 sqft. What fraction of the all houses have sqft_living in this range? Save this result to answer the quiz at the end.
+   In particular, we are going to use logical filters to select rows of an SFrame. You can find more info in the Logical Filter section of this documentation. Using such filters, first select the houses that have sqft_living higher than 2000 sqft but no larger than 4000 sqft. What fraction of the all houses have sqft_living in this range? Save this result to answer the quiz at the end.
 
-Ans:
+   Ans:
 
-100.0 * sales[(sales['sqft_living'] > 2000) & (sales['sqft_living'] <= 4000)].num_rows() / sales.num_rows()
+      100.0 * sales[(sales['sqft_living'] > 2000) & (sales['sqft_living'] <= 4000)].num_rows() / sales.num_rows()
 
-42.187572294452416
+      42.187572294452416
 
-    Building a regression model with several more features: In the sample notebook, we built two regression models to predict house prices, one using just sqft_living and the other one using a few more features, we called this set
+   Building a regression model with several more features: In the sample notebook, we built two regression models to predict house prices, one using just sqft_living and the other one using a few more features, we called this set
 
-my_features = ['bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors', 'zipcode']
+      my_features = ['bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors', 'zipcode']
 
 Now, going back to the original dataset, you will build a model using the following features:
 
-advanced_features = 
-[
-'bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors', 'zipcode',
-'condition', # condition of house       
-'grade', # measure of quality of construction       
-'waterfront', # waterfront property       
-'view', # type of view        
-'sqft_above', # square feet above ground        
-'sqft_basement', # square feet in basement        
-'yr_built', # the year built        
-'yr_renovated', # the year renovated        
-'lat', 'long', # the lat-long of the parcel       
-'sqft_living15', # average sq.ft. of 15 nearest neighbors         
-'sqft_lot15', # average lot size of 15 nearest neighbors 
-]
+      advanced_features = 
+    [
+      'bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors', 'zipcode',
+     'condition', # condition of house       
+      'grade', # measure of quality of construction       
+          'waterfront', # waterfront property       
+       'view', # type of view        
+     'sqft_above', # square feet above ground        
+      'sqft_basement', # square feet in basement        
+          'yr_built', # the year built        
+       'yr_renovated', # the year renovated        
+        'lat', 'long', # the lat-long of the parcel       
+          'sqft_living15', # average sq.ft. of 15 nearest neighbors         
+        'sqft_lot15', # average lot size of 15 nearest neighbors 
+        ]
 
 Compute the RMSE (root mean squared error) on the test_data for the model using just my_features, and for the one using advanced_features.
 
-Ans:
+         Ans:
 
-my_features = ['bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors', 'zipcode']
+          my_features = ['bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors', 'zipcode']
 
-advanced_features = 
-[
-'bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors', 'zipcode',
-'condition', # condition of house       
-'grade', # measure of quality of construction       
-'waterfront', # waterfront property       
-'view', # type of view        
-'sqft_above', # square feet above ground        
-'sqft_basement', # square feet in basement        
-'yr_built', # the year built        
-'yr_renovated', # the year renovated        
-'lat', 'long', # the lat-long of the parcel       
-'sqft_living15', # average sq.ft. of 15 nearest neighbors         
-'sqft_lot15', # average lot size of 15 nearest neighbors 
-]
+        advanced_features = 
+         [
+          'bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors', 'zipcode',
+            'condition', # condition of house       
+          'grade', # measure of quality of construction       
+           'waterfront', # waterfront property       
+         'view', # type of view        
+       'sqft_above', # square feet above ground        
+         'sqft_basement', # square feet in basement        
+       'yr_built', # the year built        
+       'yr_renovated', # the year renovated        
+        'lat', 'long', # the lat-long of the parcel       
+        'sqft_living15', # average sq.ft. of 15 nearest neighbors         
+           'sqft_lot15', # average lot size of 15 nearest neighbors 
+           ]
 
-train_data,test_data = sales.random_split(.8,seed=0)
+         train_data,test_data = sales.random_split(.8,seed=0)
 
-f_model = graphlab.linear_regression.create(train_data, target='price', features=my_features, validation_set=None)
-af_model = graphlab.linear_regression.create(train_data, target='price', features=advanced_features, validation_set=None)
+       f_model = graphlab.linear_regression.create(train_data, target='price', features=my_features, validation_set=None)
+         af_model = graphlab.linear_regression.create(train_data, target='price', features=advanced_features, validation_set=None)
 
-print "RMSE diff = " + str(f_model.evaluate(test_data)['rmse'] - af_model.evaluate(test_data)['rmse'])
+      print "RMSE diff = " + str(f_model.evaluate(test_data)['rmse'] - af_model.evaluate(test_data)['rmse'])
 
-RMSE diff = 22711.3165108
-WEEK 3 Classification: Analyzing Sentiment
+      RMSE diff = 22711.3165108
+# WEEK 3 Classification: Analyzing Sentiment
 CLASSIFICATION MODELING
 Analyzing the sentiment of reviews
 
@@ -605,12 +611,12 @@ Classification error & accuracy
     Accuracy = (# correct) / (total # sentences)
         best possible value = 1.0
 
-error = 1 - accuracy
+     error = 1 - accuracy
 What's a good accuracy?
 
 Purely random guessing on a binary classification = 0.5 accuracy
 
-For k classes, accuracy = 1/k
+    For k classes, accuracy = 1/k
 
 we should at least beat random guessing
 
@@ -784,28 +790,30 @@ Analyzing sentiment: IPython Notebook
 
 iPython Notebook
 
-Analyze text products['word_count'] = graphlab.text_analytics.count_words(products['review'])
+         Analyze text products['word_count'] = graphlab.text_analytics.count_words(products['review'])
 
 Train classifier using a logistic classifier
 
-train_data,test_data = products.random_split(.8, seed=0)
+         train_data,test_data = products.random_split(.8, seed=0)
 
 
-sentiment_model = graphlab.logistic_classifier.create(train_data,
+         sentiment_model = graphlab.logistic_classifier.create(train_data,
                                                      target='sentiment',
                                                      features=['word_count'],
                                                      validation_set=test_data)
 
 Evaluate the sentiment model using ROC Curve
 
-sentiment_model.evaluate(test_data, metric='roc_curve')
+       sentiment_model.evaluate(test_data, metric='roc_curve')
 
-sentiment_model.show(view='Evaluation')
+        sentiment_model.show(view='Evaluation')
 
 Programming assignment
+
 Analyzing product sentiment assignment
 Quiz: Analyzing product sentiment
-WEEK 4 Clustering and Similarity: Retrieving Documents
+
+# WEEK 4 Clustering and Similarity: Retrieving Documents
 Algorithms for retrieval and measuring similarity of documents
 Document retrieval: A case study in clustering and measuring similarity
 
@@ -1082,51 +1090,53 @@ Loading & exploring Wikipedia data
 
 Using text_analytics
 
-obama = people[people['name'] == 'Barack Obama']
+       obama = people[people['name'] == 'Barack Obama']
 
-obama = graphlab.text_analytics.count_words(obama['text'])
+         obama = graphlab.text_analytics.count_words(obama['text'])
 
-print obama['word_count']
+         print obama['word_count']
 
 Exploring word counts
 
-Extract words and counts using stack
+ Extract words and counts using stack
 
-obama_word_count_table = obama[['word_count']] \
+            obama_word_count_table = obama[['word_count']] \
                         .stack('word_count',
                                new_column_name = ['word','count']) \
                         .sort('count', ascending=False)
 
 Computing & exploring TF-IDFs
 
-people['word_count'] = graphlab.text_analytics.count_words(people['text'])
+         people['word_count'] = graphlab.text_analytics.count_words(people['text'])
 
-people['tfidf'] = graphlab.text_analytics.tf_idf(people['word_count'])
+        people['tfidf'] = graphlab.text_analytics.tf_idf(people['word_count'])
 
-obama = people[people['name'] == 'Barack Obama']
+      obama = people[people['name'] == 'Barack Obama']
 
-obama[['tfidf']].stack('tfidf',new_column_name=['word','tfidf']).sort('tfidf',ascending=False)
+        obama[['tfidf']].stack('tfidf',new_column_name=['word','tfidf']).sort('tfidf',ascending=False)
 
 Computing distances between Wikipedia articles
 
 Manually computing distance
 
-clinton = people[people['name'] == 'Bill Clinton']
+          clinton = people[people['name'] == 'Bill Clinton']
 
-graphlab.distances.cosine(obama['tfidf'][0],clinton['tfidf'][0])
+        graphlab.distances.cosine(obama['tfidf'][0],clinton['tfidf'][0])
 
 Building & exploring a nearest neighbors model for Wikipedia articles
 
 Using nearest_neighbors
 
-knn_model = graphlab.nearest_neighbors \
+           knn_model = graphlab.nearest_neighbors \
             .create(people, features=['tfidf'], label='name')
 
-knn_model.query(obama, radius=0.84, k=10)
+          knn_model.query(obama, radius=0.84, k=10)
 
 Programming assignment: Retrieving Wikipedia articles assignment1h
 Quiz: Retrieving Wikipedia articles
-WEEK 5 Recommender Systems
+
+# WEEK 5 Recommender Systems
+
 Recommender systems
 
 ML to use past history of your and other's purchases
