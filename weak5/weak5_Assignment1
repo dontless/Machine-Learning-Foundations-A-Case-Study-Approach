@@ -1,0 +1,77 @@
+MACHINE LEARNING FOUNDATIONS - RECOMMENDER SYSTEM -
+QUIZ1
+—
+1) Recommending items based on global popularity can (check all that apply):
+ 
+  a) provide person alization
+  b) capture context (e.g., time of day)
+  c) none of the above
+  
+  answer:- C 
+  
+2) Recommending items using a classi cation approach can (check all that apply):
+    
+    a) provide personalization
+    b) capture context (e.g., time of day)
+    c) none of the above
+  
+      Answer:-  a,b
+  
+3) Recommending items using a simple count based co-occurrence matrix can (check all that apply):
+ 
+ a) provide personalization
+ b) capture context (e.g., time of day)
+ c) none of the above
+   answer:- a
+
+4) Recommending items using featurized matrix factorization can (check all that apply):
+    a) provide personalization
+    b) capture context (e.g., time of day)
+    c) none of the above
+   
+         Answer:- a,b
+    
+5) Normalizing co-occurrence matrices is used primarily to account for:
+a) people who purchased many items
+b) items purchased by many people
+c) eliminating rare products
+d) none of the above
+       
+         Answer:= b
+  
+6) A store has 3 customers and 3 products. Below are the learned feature vectors for each user and
+product. Based on this estimated model, which product would you recommend most highly to User
+#2?
+User ID Feature vector
+1 (1.73, 0.01, 5.22)
+2 (0.03, 4.41, 2.05)
+3 (1.13, 0.89, 3.76)
+Product ID Feature vector
+1 (3.29, 3.44, 3.67)
+2 (0.82, 9.71, 3.88)
+3 (8.34, 1.72, 0.02)
+a) Product #1
+b) Product #2
+c) Product #3
+      
+          Answer:-b
+
+7) For the liked and recommended items displayed below, calculate the recall and round to 2 decimal
+points. (As in the lesson, green squares indicate recommended items, magenta squares are liked
+items. Items not recommended are grayed out for clarity.) Note: enter your answer in American
+decimal format (e.g. enter 0.98, not 0,98)
+
+         Answer:- 0.33 i.e- 1/3
+
+8) For the liked and recommended items displayed below, calculate the precision and round to 2
+decimal points. (As in the lesson, green squares indicate recommended items, magenta squares are
+liked items. Items not recommended are grayed out for clarity.) Note: enter your answer in
+American decimal format (e.g. enter 0.98, not 0,98)
+
+           Answer:-0.25  i.e- 1/4
+
+9) Based on the precision-recall curves in the gure below, which recommender would you use?
+a) RecSys #1
+b) RecSys #2
+c) RecSys #3
+Answer:- a
