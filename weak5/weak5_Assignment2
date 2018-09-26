@@ -1,0 +1,28 @@
+# MACHINE LEARNING FOUNDATIONS - RECOMMENDER SYSTEM -
+  ASSIGNMENT QUIZ
+—
+1) Which of the artists below have had the most unique users listening to their songs?
+a) Kanye West
+b) Foo Fighters
+c) Taylor Swift
+d) Lady GaGa
+
+    Answer:- c
+    
+2) Which of the artists below is the most popular artist, the one with highest total listen_count, in
+the data set?
+a) Taylor Swift
+b) Kings of Leon
+c) Coldplay
+d) Lady GaGa
+
+     Answer: b
+
+3) Which of the artists below is the least popular artist, the one with smallest total listen_count, in
+the data set?
+a) William Tabbert
+b) Velvet Underground & Nico
+c) Kanye West
+d) The Cool Kids
+   
+          Answer:- a
