@@ -1352,15 +1352,17 @@ Quiz: Recommender Systems
 
 1 Recommending items based on global popularity can (check all that apply):
 
-    provide personalization
-    capture context (e.g., time of day)
-    none of the above
+   a) provide personalization
+   b)capture context (e.g., time of day)
+   c) none of the above
+   
 
 2 Recommending items using a classification approach can (check all that apply):
 
     provide personalization
     capture context (e.g., time of day)
     none of the above
+    answer:-
 
 3 Recommending items using a simple count based co-occurrence matrix can (check all that apply):
 
@@ -1402,6 +1404,8 @@ Quiz: Recommender Systems
     RecSys #2
 
     RecSys #3
+
+Answer: -
 
     3
 
@@ -1644,6 +1648,8 @@ Quiz: Deep Learning 6 questions
     Linear classifiers are useful, because, with enough data, they can represent anything.
     Having good non-linear features can allow us to learn very accurate linear classifiers.
     none of the above
+    
+    answer:-    3
 
 2 A simple linear classifier can represent which of the following functions? (Check all that apply) Hint: If you are stuck, see https://www.coursera.org/learn/ml-foundations/module/nqC1t/discussions/AAIUurrtEeWGphLhfbPAyQ
 
@@ -1651,6 +1657,8 @@ Quiz: Deep Learning 6 questions
     x1 AND x2 AND NOT x3
     x1 OR (x2 AND NOT x3)
     none of the above
+    
+    answer:- 1,2,3
 
 Generated tables
 
@@ -1664,35 +1672,33 @@ Generated tables
 
 Hint: If you are stuck, see https://www.coursera.org/learn/ml-foundations/module/nqC1t/discussions/AAIUurrtEeWGphLhfbPAyQ
 
+answer:- 4
+
+
 4 Which of the following statements is true? (Check all that apply)
 
-    Features in computer vision act like local detectors.
-    Deep learning has had impact in computer vision, because it’s used to combine all the different hand-created features that already exist.
-    By learning non-linear features, neural networks have allowed us to automatically learn detectors for computer vision.
-    none of the above
+   1). Features in computer vision act like local detectors.
+   2).Deep learning has had impact in computer vision, because it’s used to combine all the different hand-created features            that already exist.
+   3). By learning non-linear features, neural networks have allowed us to automatically learn detectors for computer              vision.
+   4).none of the above
+    
+answer:- 1,3
 
 5 If you have lots of images of different types of plankton labeled with their species name, and lots of computational resources, what would you expect to perform better predictions:
 
-    a deep neural network trained on this data.
-    a simple classifier trained on this data, using deep features as input, which were trained using ImageNet data.
+   1). a deep neural network trained on this data.
+   2). a simple classifier trained on this data, using deep features as input, which were trained using ImageNet data.
+
+answer:- 1
+    
 
 6 If you have a few images of different types of plankton labeled with their species name, what would you expect to perform better predictions:
 
-    a deep neural network trained on this data.
+   1). a deep neural network trained on this data.
 
-    a simple classifier trained on this data, using deep features as input, which were trained using ImageNet data.
+   2).  a simple classifier trained on this data, using deep features as input, which were trained using ImageNet data.
 
-    3
-
-    x 1,2,3
-
-    3 x 3,5 x 3,4 x 5 x 1,2,5
-
-    1,2,3
-
-    1
-
-    2
+ answer:-  2
 
 Deep features for image classification: iPython Notebook
 
